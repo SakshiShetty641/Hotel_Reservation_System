@@ -1,4 +1,7 @@
 package com.bridgelabz;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Purpose - To build a Hotel Reservation System
  * Author - Sakshi Shetty
@@ -6,7 +9,17 @@ package com.bridgelabz;
  * @since - 2021-09-02
  */
 public class HotelReservationSystem {
-    public static void main(String[] args) {
-        System.out.println("Welcome to the program");
+    private List<Hotel> hotels;
+
+    public HotelReservationSystem(){
+        this.hotels = new ArrayList<>();
+    }
+
+    /**
+     * This method is used to add hotel to the Hotel List
+     */
+    public boolean addHotel(Hotel hotel) {
+        return this.hotels.add(hotel);
     }
 }
+
