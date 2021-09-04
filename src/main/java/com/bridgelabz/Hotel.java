@@ -5,10 +5,12 @@ package com.bridgelabz;
 public class Hotel {
     private String hotelName;
     private int hotelRegularRate;
+    private int hotelWeekendRate;
 
-    public Hotel(String hotelName,int hotelRegularRate){
+    public Hotel(String hotelName,int hotelRegularRate,int hotelWeekendRate){
         this.hotelName = hotelName;
         this.hotelRegularRate = hotelRegularRate;
+        this.hotelWeekendRate = hotelWeekendRate;
     }
 
     public String getHotelName(){
@@ -25,5 +27,13 @@ public class Hotel {
 
     public void setHotelRegularRate(int hotelRegularRate){
         this.hotelRegularRate = hotelRegularRate;
+    }
+
+    public int getHotelWeekendRate(){
+        return hotelWeekendRate;
+    }
+
+    public void setHotelWeekendRate(int hotelWeekendRate){
+        this.hotelWeekendRate = hotelWeekendRate;
     }
 }
